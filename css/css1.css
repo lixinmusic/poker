@@ -1,0 +1,268 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+
+/*  .animation{
+	width: 400px;
+	height: 400px;
+	background:pink;
+} 
+
+
+.zidan{
+	border-radius: 50%;
+	border:2px solid red;
+	position: absolute;
+	top:100px;
+	left:300px;
+} */
+
+.zhuozi h1{
+	text-align: center;
+	line-height: 700px;
+	color:#fff;
+	z-index: 60;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	margin: 0 auto;
+	transition:all 0.8s ease;
+	transform:translateY(0);
+	animation-fill-mode:forwards;
+	font-size: 80px;
+	cursor:pointer;
+	z-index: 600;
+
+}
+.zhuozi .zuol{
+	width: 50%;
+	height: 700px;
+	position: absolute;
+	top:0;
+	left:0;
+	background: green;
+	background: rgba(0,0,0,0.8);
+	transition:all 0.8s ease;
+	transform:translateX(0);
+	animation-fill-mode:forwards;
+	overflow: hidden;
+	z-index: 500;
+	
+}
+.zhuozi .youl{
+	width: 50%;
+	height: 700px;
+	position: absolute;
+	top:0;
+	right: 0;
+	background:green;
+	background: rgba(0,0,0,0.8);
+	transition:all 0.8s ease;
+	transform:translateX(0);
+	 animation-fill-mode:forwards;
+	overflow: hidden;
+	
+}
+.zhuozi.animation h1{
+       transform:translateY(-100%);
+    
+}
+
+.zhuozi.animation .zuol{
+	transform:translateX(-100%);
+	 
+}
+.zhuozi.animation .youl{
+	transform:translateX(100%);
+	
+}
+.zuol span{
+	color:#fff;
+	margin-left: 33%;
+	width: 120px;
+	padding: 10px 20px;
+	background: #0F5993;
+	text-align: center;
+	margin-top:10px; 
+	border-radius: 15px;
+	position: absolute;
+	display: none;
+
+}
+
+.zuol span ul{
+	width: 250px;
+	height: 260px;
+	float: left;
+	position: absolute;
+	top:50px;
+	left:-50px;
+	line-height: 30px;
+	text-align: left;
+	background: black;
+	background:rgba(0,0,0,0.1);
+	animation:pao 2.5s ease;
+	opacity: 0;
+	transform:translateX(-100%);
+	animation-fill-mode:forwards;
+	opa city:0;
+
+
+}
+.zuol span ul p{
+	 float: left;
+	color:#fcfcfc;
+	font-size: 14px;
+	
+
+}
+.zuol span ul:hover{
+opacity: 1;
+transition:all 0.8s ease;
+}
+
+@keyframes pao{
+	100%{
+		transform:translateX(0);
+		opacity: 1;
+
+	}
+}
+
+
+
+
+
+
+
+
+.animation{
+	width: 200px;
+	height: 200px;
+	background: blue;
+}
+
+
+.zidan{
+border-radius: 50%;
+position: absolute;
+left: 300px;
+top: 200px;
+
+}
+
+.zhuozi{
+	width: 700px;
+	height: 700px;
+	margin:0 auto;
+	position: relative;
+	background:rgba(20,143,241,0.6);
+}
+.pai{
+	position: absolute;
+	height:120px ;
+	width:80px;
+	back ground:green;
+	top: 0;
+	left: 0;
+	background-size:cover;
+	opacity: 0.81;
+}
+.pai.chulie{
+	box- shadow: 0 0 0 4px black;
+}
+
+/* .move-left,.move-right{
+	width: 120px;
+	position: absolute;
+	margin-left: -50px;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 30px;
+	cursor: pointer;
+	color:#fff;
+	left:50%;
+	padding: 10px 20px;
+	margin-top:5px;
+} */
+.zhuozi .move-left{
+	width: 120px;
+	position: absolute;
+	margin-left: -50px;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 30px;
+	cursor: pointer;
+	color:#fff;
+	left:47%;
+	padding: 10px 20px;
+	margin-top:5px;
+	background: #CF682D;
+	bottom: 100px;
+	z-index:500;
+	transition:all 12s ease;
+	transform:translateX(-100%);
+	animation:move 1s;
+	animation-fill-mode:forwards;
+	animation-delay:2s;
+}
+
+.move-right{
+	width: 120px;
+	position: absolute;
+	margin-left: -50px;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 30px;
+	cursor: pointer;
+	color:#fff;
+	left:47%;
+	padding: 10px 20px;
+	margin-top:5px;
+	background: #187107;
+	bottom: 160px;
+	z-index: 500;
+	transition:all 12s ease;
+	transform:translateX(100%);
+	animation:haohao 1s;
+	animation-fill-mode:forwards;
+	animation-delay:2s;
+}
+
+@keyframes move{
+	0%{
+		transform:translateX(-100%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+@keyframes haohao{
+     0%{
+     	transform:translateX(100%);
+     }
+	100%{
+		transform:translateX(0);
+	}
+}
+
+body{
+	
+	background:url(../img/12.jpg) ;
+  
+	z-index: 1000;
+	overflow: hidden;
+}
+
+
+
+
