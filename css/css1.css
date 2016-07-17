@@ -67,6 +67,7 @@
 	transform:translateX(0);
 	 animation-fill-mode:forwards;
 	overflow: hidden;
+	z-index: 10;
 	
 }
 .zhuozi.animation h1{
