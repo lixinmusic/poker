@@ -103,7 +103,7 @@
 	float: left;
 	position: absolute;
 	top:50px;
-	left:-50px;
+	left:-40px;
 	line-height: 30px;
 	text-align: left;
 	background: black;
@@ -112,7 +112,7 @@
 	opacity: 0;
 	transform:translateX(-100%);
 	animation-fill-mode:forwards;
-	opa city:0;
+
 
 
 }
@@ -206,7 +206,7 @@ top: 200px;
 	left:47%;
 	padding: 10px 20px;
 	margin-top:5px;
-	background: #CF682D;
+	/*background: #CF682D;*/
 	bottom: 100px;
 	z-index:500;
 	transition:all 12s ease;
@@ -214,7 +214,10 @@ top: 200px;
 	animation:move 1s;
 	animation-fill-mode:forwards;
 	animation-delay:2s;
+	background:url(../img/wo.png)no-repeat ;
+	background-size: cover;
 }
+
 
 .move-right{
 	width: 120px;
@@ -229,7 +232,7 @@ top: 200px;
 	left:47%;
 	padding: 10px 20px;
 	margin-top:5px;
-	background: #187107;
+	/*background: #187107;*/
 	bottom: 160px;
 	z-index: 500;
 	transition:all 12s ease;
@@ -237,6 +240,8 @@ top: 200px;
 	animation:haohao 1s;
 	animation-fill-mode:forwards;
 	animation-delay:2s;
+	background:url(../img/wo.png)no-repeat ;
+	background-size: cover;
 }
 
 @keyframes move{
